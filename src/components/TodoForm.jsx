@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import TodoContext from './context/TodoContext';
 
 function TodoForm() {
+	const { sayHello } = useContext(TodoContext);
 	const [text, setText] = useState('');
 	const handleChange = (e) => {
 		setText(e.target.value);
@@ -10,6 +12,7 @@ function TodoForm() {
 		if (text === '') {
 			console.log('Please enter something');
 		} else {
+			sayHello();
 			setText('');
 		}
 	};
