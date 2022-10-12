@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+	/* Custom Theme */
+	--mainbg: #040404;
+	--primaryColor: #13505b;
+	--secondaryColor: #0c7489;
+	--accentColor: #d7d9ce;
+
+	/* Dark Theme */
+
+	/* Light Theme */
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--mainbg);
+	color: var(--accentColor);
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--accentColor);
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 2rem;
+	font-size: 2rem;
+}
+
+header > button {
+	width: fit-content;
+	height: fit-content;
+	background-color: transparent;
+	margin-left: 1rem;
+	transform: translateX(50%);
+}
+
+header > button:hover {
+	background-color: var(--accentColor);
+	color: var(--mainbg);
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 50vh;
+	padding: 1rem;
+}
+
+form {
+	display: flex;
+	margin-bottom: 2rem;
+}
+
+input {
+	height: 48px;
+	width: 80%;
+	border-radius: 0.5rem;
+	border: none;
+	margin-right: 1rem;
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+input:focus {
+	border-color: var(--accentColor);
+}
+
+button {
+	background-color: var(--primaryColor);
+	color: var(--accentColor);
+	height: 48px;
+	width: 48px;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease-in;
+}
+
+button:hover {
+	background-color: var(--accentColor);
+	color: var(--primaryColor);
+	cursor: pointer;
+}
+
+.todoItem {
+	font-weight: 500;
+	font-size: 1.5rem;
+	text-align: left;
+	margin: 1rem 0;
+	color: var(--accentColor);
+	background-color: var(--secondaryColor);
+	padding: 0 0.5rem;
+	border-radius: 0.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.todoItem > button {
+	/* cursor: pointer */
+	width: fit-content;
+	height: fit-content;
+	border: none;
+	background-color: transparent;
+	transition: all 0.2s ease-in;
+}
+
+.todoItem > button:hover {
+	background-color: var(--accentColor);
+	color: var(--primaryColor);
+}

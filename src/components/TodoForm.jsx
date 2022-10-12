@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react';
 import TodoContext from './context/TodoContext';
+import { FaPlus } from 'react-icons/fa';
 
 function TodoForm() {
 	const { sayHello } = useContext(TodoContext);
@@ -17,7 +18,7 @@ function TodoForm() {
 		}
 	};
 	return (
-		<div>
+		<div className="todoForm">
 			<form onSubmit={handleSubmit}>
 				<input
 					type="text"
@@ -26,7 +27,9 @@ function TodoForm() {
 					value={text}
 					onChange={handleChange}
 				/>
-				<button type="submit">Add</button>
+				<button type="submit">
+					<FaPlus size={24} />
+				</button>
 			</form>
 		</div>
 	);
