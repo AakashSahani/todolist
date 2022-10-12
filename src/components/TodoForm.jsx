@@ -3,7 +3,7 @@ import TodoContext from './context/TodoContext';
 import { FaPlus } from 'react-icons/fa';
 
 function TodoForm() {
-	const { sayHello } = useContext(TodoContext);
+	const { addTodo } = useContext(TodoContext);
 	const [text, setText] = useState('');
 	const handleChange = (e) => {
 		setText(e.target.value);
@@ -13,7 +13,7 @@ function TodoForm() {
 		if (text === '') {
 			console.log('Please enter something');
 		} else {
-			sayHello();
+			addTodo(text);
 			setText('');
 		}
 	};

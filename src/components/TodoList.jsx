@@ -1,10 +1,13 @@
 import TodoItem from './TodoItem';
-import TodoData from '../data/TodoData';
+import { useContext } from 'react';
+import TodoContext from './context/TodoContext';
+
 function TodoList() {
+	const { todo } = useContext(TodoContext);
 	return (
 		<ul>
-			{TodoData.map((todo) => (
-				<TodoItem key={todo.id} text={todo.text} />
+			{todo.map((todo) => (
+				<TodoItem key={todo.id} id={todo.id} text={todo.text} />
 			))}
 		</ul>
 	);
