@@ -77,7 +77,7 @@ main {
 	justify-content: flex-start;
 	min-height: 50vh;
 	padding: 1rem;
-	width: 40vw;
+	width: 50vw;
 	margin: 2rem 0;
 }
 
@@ -192,3 +192,10 @@ footer {
 	}
 	
 }
+@media (max-width: 720px) and (min-width: 500px) {
+	main {
+		width: 70vw;
+	}
+	
+}
+
