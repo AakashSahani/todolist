@@ -2,10 +2,10 @@
 
 :root {
 	/* Custom Theme */
-	--mainbg: #040404;
-	--primaryColor: #13505b;
-	--secondaryColor: #0c7489;
-	--accentColor: #d7d9ce;
+	--mainbg: #cad2c5;
+	--primaryColor: #84a98c;
+	--secondaryColor: #52796f;
+	--accentColor: #2f3e46;
 
 	/* Dark Theme */
 
@@ -190,12 +190,9 @@ footer {
 	main {
 		width: 90vw;
 	}
-	
 }
 @media (max-width: 720px) and (min-width: 500px) {
 	main {
 		width: 70vw;
 	}
-	
 }
-

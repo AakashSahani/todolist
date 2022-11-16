@@ -1,6 +1,8 @@
+import React from 'react';
 import { createContext, useState } from 'react';
 import TodoData from '../../data/TodoData';
 import { v4 as uuid } from 'uuid';
+import PropTypes from 'prop-types';
 const TodoContext = createContext();
 
 export const TodoProvider = ({ children }) => {
@@ -20,10 +22,13 @@ export const TodoProvider = ({ children }) => {
 		setTodo(newArr);
 	};
 	return (
-		<TodoContext.Provider value={{ todo, addTodo, removeTodo }}>
+		<TodoContext.Provider value={{ text, setText, todo, addTodo, removeTodo }}>
 			{children}
 		</TodoContext.Provider>
 	);
 };
 
+TodoProvider.propTypes = {
+	children: PropTypes.any,
+};
 export default TodoContext;

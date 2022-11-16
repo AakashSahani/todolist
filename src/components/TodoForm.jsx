@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useContext } from 'react';
 import TodoContext from './context/TodoContext';
 import { FaPlus } from 'react-icons/fa';

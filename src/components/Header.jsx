@@ -1,3 +1,4 @@
+import React from 'react';
 import Theme from './Theme';
 function Header() {
 	return (
